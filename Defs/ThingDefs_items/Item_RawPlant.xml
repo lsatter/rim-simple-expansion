@@ -72,6 +72,7 @@
     </comps>
     <thingCategories>
         <li>LSSE_PackedRawPlant</li>
+        <li>MeatRaw</li>
     </thingCategories>
 </ThingDef>
 

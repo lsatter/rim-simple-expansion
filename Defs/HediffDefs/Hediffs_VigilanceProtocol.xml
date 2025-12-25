@@ -1,0 +1,18 @@
+<Defs>
+
+<!-- 沉眠协议 -->
+<!-- 一个植入物状态，由对应植入物赋予，作用是忽略睡觉被打扰的想法-->
+<HediffDef ParentName="ImplantHediffBase">
+    <defName>LSSE_VigilanceProtocol</defName>
+    <label>沉眠协议</label>
+    <labelNoun>沉眠协议</labelNoun>
+    <description>沉眠协议的神经界面正在运作。殖民者的感官输入被智能调节，意识沉入深度、高效的恢复周期。外部世界被淡化，但守护协议始终在线。</description>
+    <descriptionHyperlinks><ThingDef>LSSE_VigilanceProtocolImplant</ThingDef></descriptionHyperlinks>
+    <stages>
+      <!-- 这个状态不会有任何作用，它的工作原理是提供一个标记，-->
+      <!-- 一个补丁会作用在睡眠被打扰的想法上，让具有这个标记的殖民者不产生睡眠被打扰的想法。 -->
+    </stages>
+    <spawnThingOnRemoved>LSSE_VigilanceProtocolImplant</spawnThingOnRemoved>
+</HediffDef>
+
+</Defs>

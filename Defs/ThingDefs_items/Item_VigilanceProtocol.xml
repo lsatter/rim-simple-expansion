@@ -1,0 +1,25 @@
+<Defs>
+
+<!-- 沉眠协议芯片 -->
+<ThingDef ParentName="BodyPartBionicImperialBase">
+    <defName>LSSE_VigilanceProtocolImplant</defName>
+    <label>沉眠协议芯片</label>
+    <description>这并非简单的助眠设备。它内置的低阶AI会在检测到植入者进入睡眠状态后，立即启动‘感官管理协议’，接管并过滤视听触觉信号，以创造一个绝对优化的神经恢复环境。同时，‘警戒子协议’将持续监控生命体征与外部刺激，确保在任何潜在威胁或预定时刻到来时，能平稳、迅速地将使用者唤醒。\n\n&lt;i&gt;只是让睡眠被打扰想法不产生&lt;/i&gt;</description>
+    <descriptionHyperlinks><RecipeDef>LSSE_InstallVigilanceProtocolImplant</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <costList> <!-- 10玻璃钢，1个高级零部件，1个低级核心-->
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <SubcoreBasic>1</SubcoreBasic>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>CircadianInfluence</researchPrerequisite>
+    </recipeMaker>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+</ThingDef>
+
+</Defs>

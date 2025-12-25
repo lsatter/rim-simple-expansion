@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- 安装沉眠协议芯片手术 -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>LSSE_InstallVigilanceProtocolImplant</defName>
+    <label>安装沉眠协议芯片</label>
+    <description>安装沉眠协议芯片</description>
+    <descriptionHyperlinks>
+      <ThingDef>LSSE_VigilanceProtocolImplant</ThingDef>
+      <HediffDef>LSSE_VigilanceProtocol</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>正在安装沉眠协议芯片</jobString>
+    <ingredients>
+      <li>
+        <filter><thingDefs><li>LSSE_VigilanceProtocolImplant</li></thingDefs></filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LSSE_VigilanceProtocolImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LSSE_VigilanceProtocol</addsHediff>
+</RecipeDef>
+
+<!-- 移除沉眠协议芯片 -->
+<RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>LSSE_RemoveVigilanceProtocolImplant</defName>
+    <label>移除沉眠协议芯片</label>
+    <description>移除沉眠协议芯片</description>
+    <descriptionHyperlinks>
+      <ThingDef>LSSE_VigilanceProtocolImplant</ThingDef>
+      <HediffDef>LSSE_VigilanceProtocol</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>正在移除沉眠协议芯片</jobString>
+    <removesHediff>LSSE_VigilanceProtocol</removesHediff>
+</RecipeDef>
+
+
 <!-- 解除食物中毒手术 -->
 <RecipeDef ParentName="SurgeryFlesh">
     <defName>LSSE_RemoveFP</defName>

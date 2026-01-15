@@ -56,7 +56,7 @@
     <label>粗制石砖自增殖</label>
     <workAmount>1600</workAmount>
     <products>
-        <BlocksGranite>20</BlocksGranite>
+        <LSSE_BlocksRaw>20</LSSE_BlocksRaw>
     </products>
 </RecipeDef>
 
